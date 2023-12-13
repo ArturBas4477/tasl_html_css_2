@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles1/styles.css"/>
+
+<body>
+  <div class="mainBox">
+    <div class="box1"><p data-text1=""><b>Get Started With Machine Learning</b></p>
+    <p> Learn the fundamentals of Machine Learning with this free course. Future-proof your career by adding ML skills to  </p>
+<p>your toolkit — or build foundational ML skills to land a job in AI or Data Science.</p>
+
+    <div class="box2">
+        <button style="    padding: 5px;
+        color: white;
+        background-color: #3d3d95;
+        border-radius: 2px;">Get Free Course</button>
+    </div>
+  <div class="box3"> <p>While creating an application or working with files in your application, you will want to store a file in a folder. Sometimes there will be instances where the folder does not exist.
+  </p><p>You want to create that folder during the process so the file can be stored without making the user resend the request.</p>
+  <p>You can create folder or directory by using the File::makeDirectory() function.</p>
+   <p style="font-size: 30px;"><b>Syntax</b></p>
+
+  </div>
+
+    <div class="box4">
+        <p style="color:wheat;">File::makeDirectory($path, $mode, $recursive, $force)</p>
+    </div>
+    <div class="box5">
+        <p style="font-size: 30px;"><b>Parameters</b></p>
+        <p>The File::makeDirectory function takes the following as input parameters:</p>
+    <ul>
+        <li>$path: This string represents the path of the directory we wish to create.</li>
+    <li>$mode: This is a four-digit integer that is used to set permissions for the directory.
+    </li>
+    <li>$mode: This is a boolean variable used to specify if the recursive mode is set.</li>
+    <li>$force: This is a boolean variable that, when set, lets you create a file in the profile path even when the directories in the path do not exist.</li>
+    </ul>
+    </div>
+    
+   
+    <div class="box6">
+        <p style="font-size: 30px;"><b>Return value</b></p>
+        <p>The function returns true if the requested directory is created. Otherwise, it returns false.
+        </p>
+        <p style="font-size: 30px;"><b>Code</b></p>
+    </div>
+    <div class="box7">
+        <p style="color: white;">public function createDirecrotory(Request $request) <br>
+            {
+                $path = public_path('upload/');<br>
+            <br>
+                if(!File::isDirectory($path)){<br>
+                    File::makeDirectory($path, 0777, true, true);<br>
+            <br>
+            // retry storing the file in newly created path. <br>
+            <br>
+                }   </p>
+    </div>
+    <div class="box8"> 
+        <p>The above code has $path, which is basically an upload folder where you want to store the file.</p>
+        <p> We check if it exists, and if it doesn’t, we create the upload folder.
+        </p>
+        <br>
+        <p style="background-color: aquamarine;">Note: The File::isDirectory() function is used to check whether or not the given path exists.</p>
+    </div>
+    <div class="box9"><p>RELATED TAGS</p>
+       <button style="border-radius: 15px;">folder</button>
+       <button style="border-radius: 15px;">php </button>
+       <button style="border-radius: 15px;">laravel</button>
+       <p>CONTRIBUTOR</p>
+       <br>
+       <img src="imeges2/unnamed.png" width="60px" >
+
+    <div class="box10"></div>
+    </div>
+    <div class="box11"></div>
+    <div class="box12"></div>
+  </div>
+  </div>
+
+
+
+</body>
+</html>
